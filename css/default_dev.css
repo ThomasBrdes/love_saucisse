@@ -113,3 +113,25 @@ body {
 #copyright a{
 	color:#666;
 }
+
+#musicButtonContainer {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#playMusicButton {
+	background-color: pink;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 16px;
+	cursor: pointer;
+	font-family: 'Courier New', Courier, monospace;
+	box-shadow: 0 0 10px rgba(255, 192, 203, 0.6);
+	transition: background-color 0.3s ease;
+}
+
+#playMusicButton:hover {
+	background-color: hotpink;
+	color: white;
+}

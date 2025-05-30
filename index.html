@@ -10,66 +10,89 @@
 		}
 	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<link href="css/button.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
 </head>
 
+
+
 <body>
+	</script>
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				<span class="space"/><span class="comments"> * In the tasty universe of saucisses,</span><br />
+				<span class="space"/><span class="comments"> * Thomas spotted the shiniest sausage: Andi 🌭✨</span><br />
+				<span class="space"/><span class="comments"> * Here's their love story — juicy, funny, and full of flavor.</span><br />
+				<span class="space"/><span class="comments"> */</span><br />
+				PetiteSaucisse thomas = <span class="keyword">new</span> PetiteSaucisse(<span class="string">"Thomas"</span>);<br />
+				PetiteSaucisse andi = <span class="keyword">new</span> PetiteSaucisse(<span class="string">"Andi"</span>);<br />
+				<span class="comments">// Thomas saw Andi and his tiny sausage heart melted 💘</span><br />
+				thomas.spotted(andi);<br />
+				thomas.fellInLoveInstantly();<br />
+				<span class="comments">// First date: romantic burger feast at L'Authentique 🍔💑</span><br />
+				thomas.eatWith(andi, "L'Authentique Burger");<br />
+				<span class="comments">// Then came the loop of love and calories...</span><br />
+				<span class="keyword">while</span> (true) {<br />
+				<span class="placeholder"/>thomas.feed(andi, "McDonalds");<br />
+				<span class="placeholder"/>thomas.share(andi, "Bubble Tea");<br />
+				<span class="placeholder"/>andi.feed(thomas, "Asian Food");<br />
+				<span class="placeholder"/>if (loveLevel > MAX) break;<br />
 				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+				<span class="comments">// On February 17th, the big question… </span><br />
+				thomas.askGirlfriend(andi, <span class="string">"Will you be my sausage partner?"</span>);<br />
+				andi.shout(<span class="string">"MIAOUUU!"</span>);<br />
+				<span class="comments">// And the little sausage adventures continued...</span><br />
+				thomas.visitPlacesWith(andi);<br />
+				andi.watchHorrorMoviesWith(thomas);<br />
+				thomas.singWith(andi);<br />
+				andi.startGossipTime();<br />
+				<span class="comments">// But one day... 😢</span><br />
+				thomas.made(andi).mad();<br />
+				thomas.sad = <span class="keyword">true</span>;<br />
+				<span class="comments">// Thomas reflects and sends 1000 hugs 🫂</span><br />
+				thomas.whisper(<span class="string">"I'm sorry Andi..."</span>);<br />
+				<span class="comments">// He hopes... she'll forgive him soon. ❤️</span><br />
 			</div>
+			<div id="musicButtonContainer">
+			<button id="playMusicButton">
+				Play Our Song 🎶
+				<svg class="star-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon class="fil0" points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"/></svg>
+				<svg class="star-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle class="fil0" cx="12" cy="12" r="5"/></svg>
+				<svg class="star-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect class="fil0" x="9" y="9" width="6" height="6"/></svg>
+				<svg class="star-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon class="fil0" points="12,4 13,10 19,10 14,14 16,20 12,17 8,20 10,14 5,10 11,10"/></svg>
+				<svg class="star-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle class="fil0" cx="12" cy="12" r="4"/></svg>
+				<svg class="star-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect class="fil0" x="10" y="10" width="4" height="4"/></svg>
+			</button>
+			</div>
+
+			<audio id="bgMusic" loop>
+			<source src="love.mp3" type="audio/mp3">
+			Your browser does not support the audio element.
+			</audio>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						Andi, I have fallen in love with you for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						Love u soooooo much.<br/>
+						<div class="signature">- Ta petite saucisse</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
 		</div>
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2010, 10, 2);
+		together.setFullYear(2024, 10, 1);
 		together.setHours(20);
 		together.setMinutes(0);
 		together.setSeconds(0);
@@ -97,6 +120,13 @@
 			adjustCodePosition();
 			$("#code").typewriter();
 		}
+		document.getElementById("playMusicButton").addEventListener("click", function () {
+			var music = document.getElementById("bgMusic");
+			music.play();
+			this.textContent = "Playing 🎵";
+			this.disabled = true;
+		});
 	</script>
+
 </body>
 </html>
